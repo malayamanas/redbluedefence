@@ -1,0 +1,28 @@
+{
+  // Cloudflare Workers configuration for RedBlueDefence CMS
+  "name": "redbluedefence-cms",
+  "compatibility_date": "2024-09-23",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": ".open-next/worker.js",
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "redbluedefence-db",
+      // Replace with your D1 database ID after running: wrangler d1 create redbluedefence-db
+      "database_id": "<replace-after-creation>"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "redbluedefence-media"
+    }
+  ],
+  "vars": {
+    "NEXT_PUBLIC_SITE_URL": "https://cms.redbluedefence.com"
+  }
+}

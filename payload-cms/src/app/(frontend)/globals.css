@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #7c43ff;
+  --color-brand-light: #a855f7;
+  --color-bg: #0a0a0f;
+  --color-surface: rgba(255, 255, 255, 0.05);
+  --color-border: rgba(255, 255, 255, 0.1);
+
+  --font-family-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-family-heading: 'Rethink Sans', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: #0a0a0f;
+  color: #e2e8f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #7c43ff, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  background: linear-gradient(#0a0a0f, #0a0a0f) padding-box,
+    linear-gradient(135deg, #7c43ff, #a855f7) border-box;
+  border: 1px solid transparent;
+}
+
+/* Glow effects */
+.glow {
+  box-shadow: 0 0 40px rgba(124, 67, 255, 0.15);
+}
+
+/* Grid pattern background */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(124, 67, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 67, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}

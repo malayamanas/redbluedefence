@@ -1,0 +1,18 @@
+# Copy this file to .dev.vars and fill in your values
+# .dev.vars is gitignored — never commit secrets
+
+# Payload CMS secret (minimum 32 characters)
+PAYLOAD_SECRET=change-me-to-a-random-32-char-string!!
+
+# Database (for local dev, use a local file path)
+DATABASE_URI=file:./redbluedefence-local.db
+# DATABASE_AUTH_TOKEN=  # Only needed for remote Turso/libSQL
+
+# Cloudflare R2 Storage (for local dev you can use filesystem storage)
+S3_ACCESS_KEY_ID=your-r2-access-key-id
+S3_SECRET=your-r2-secret-access-key
+S3_BUCKET=redbluedefence-media
+S3_ENDPOINT=https://<account-id>.r2.cloudflarestorage.com
+
+# Site URL
+NEXT_PUBLIC_SITE_URL=http://localhost:3000

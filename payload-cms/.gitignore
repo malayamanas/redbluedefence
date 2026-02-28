@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+
+# Build output
+dist/
+.open-next/
+
+# Environment
+.env
+.env.local
+.env.*.local
+.dev.vars
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Generated types
+src/payload-types.ts
+
+# OS
+.DS_Store
+*.pem
+Thumbs.db
+
+# TypeScript incremental build cache
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vercel
+.vercel
